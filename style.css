@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/w95fa');
+
+body {
+    background: #f5f2e9 !important;
+    /* color: #333 !important; */
+    color: #5c4c3d !important;
+    font-family: "W95FA" !important;
+}
+h1, h2, h3, h4, h5, h6, .header {
+    /* font-weight: bold !important; */
+}
+a {
+    text-decoration: none !important;
+}
+a:hover {
+    text-decoration: dotted underline !important;
+    cursor: grab;
+}
+.inverted {
+    background: #5c4c3d;
+    color: #f5f2e9 !important;
+}
+.centered {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+.icon-button {
+    width: 60px;
+    z-index: 100;
+    /* animation: shining 2s ease-in-out infinite; */
+    position: relative;
+    transition: 180ms;
+}
+.icon-button:hover {
+    transform: translateY(-10px);
+    filter: saturate(500%) brightness(130%);
+    cursor: grab;
+}
+.icon-button:active {
+    cursor: grabbing;
+}
+.platform {
+    width: 350px;
+    margin-top: -20px;
+    /* animation: bobbing-small 2s ease-in-out infinite; */
+    position: relative;
+}
+
+.bobbing {
+    animation: bobbing 2s ease-in-out infinite;
+}
+.bobbing-small {
+    animation: bobbing-small 2s ease-in-out infinite;
+}
+.blinking {
+    animation: blinking 1.5s ease-in-out infinite;
+}
+.animated-underline {
+    animation: animated-underline 0.5s ease-in-out infinite;
+}
+
+
+@keyframes bobbing {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+@keyframes bobbing-small {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+}
+@keyframes blinking {
+    0%, 100% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+}
+@keyframes shining {
+    0%, 100% {
+        filter: brightness(100%);
+    }
+    50% {
+        filter: brightness(50%);
+    }
+}
+@keyframes animated-underline {
+    0% { text-decoration: dashed underline; }
+    25% { text-decoration: none; }
+    50% { text-decoration: dotted underline; }
+    75% { text-decoration: solid underline; }
+    100% { text-decoration: dashed underline; }
+}
