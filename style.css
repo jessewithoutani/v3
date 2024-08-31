@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/w95fa');
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&display=swap');
 
 body {
     background: #f5f2e9 !important;
@@ -7,6 +11,19 @@ body {
     color: #5c4c3d !important;
     font-family: "W95FA" !important;
 }
+.pixelated {
+    font-family: "Tiny5" !important;
+}
+.script {
+    font-family: "Lobster" !important;
+}
+.serif {
+    font-family: "Inknut Antiqua" !important;
+}
+.barcode {
+    font-family: "Libre Barcode 128" !important;
+}
+
 h1, h2, h3, h4, h5, h6, .header {
     /* font-weight: bold !important; */
 }
@@ -26,6 +43,10 @@ a:hover {
     top: 50vh;
     left: 50vw;
     transform: translate(-50%, -50%);
+}
+.small-width {
+    width: 350px;
+    max-width: 90vw;
 }
 .icon-button {
     width: 60px;
